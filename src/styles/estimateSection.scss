@@ -1,0 +1,116 @@
+.section-container {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background-color: #f5f5f5;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #eeeeee;
+  }
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+
+  .collapse-icon {
+    margin-right: 8px;
+    font-weight: bold;
+  }
+}
+
+.section-total {
+  font-weight: bold;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.items-table {
+  width: 100%;
+  border-collapse: collapse;
+
+  th,
+  td {
+    padding: 12px 16px;
+    text-align: left;
+
+    &:nth-child(3),
+    &:nth-child(4),
+    &:nth-child(5) {
+      text-align: center;
+    }
+
+    &:nth-child(6) {
+      text-align: right;
+    }
+
+    &:nth-child(7),
+    &:nth-child(9) {
+      text-align: center;
+    }
+
+    &.no-data {
+      text-align: center;
+    }
+  }
+
+  th {
+    background-color: #f0f0f0;
+    font-weight: 500;
+  }
+
+  tr {
+    border-top: 1px solid #e0e0e0;
+
+    &:hover {
+      background-color: #f9f9f9;
+    }
+  }
+}
+
+.qty-input,
+.unit-cost-input {
+  width: 80px;
+  text-align: center;
+  padding: 6px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+
+  &:focus {
+    outline: none;
+    border-color: #2196f3;
+  }
+}
+
+.unit-cost-input {
+  width: 100px;
+}
+
+.total-cell {
+  font-weight: 500;
+}
+
+.view-button {
+  background: none;
+  border: none;
+  color: #757575;
+  cursor: pointer;
+
+  &:hover {
+    color: #424242;
+  }
+}

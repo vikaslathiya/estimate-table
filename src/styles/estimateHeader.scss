@@ -1,0 +1,28 @@
+.estimate-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 16px;
+
+  .estimate-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .grand-total-container {
+    display: flex;
+    align-items: center;
+
+    .grand-total-label {
+      color: #666;
+      margin-right: 8px;
+    }
+
+    .grand-total-value {
+      font-size: 24px;
+      font-weight: bold;
+    }
+  }
+}
